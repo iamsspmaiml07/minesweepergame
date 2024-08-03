@@ -60,6 +60,11 @@ class Board:
         return pd.DataFrame(visible_board)
 
 def main():
+    # Set page configuration
+    st.set_page_config(page_title="Minesweeper",
+                       layout="wide",
+                       page_icon="👾")
+    
     st.title("Minesweeper")
 
     # Sidebar for settings
